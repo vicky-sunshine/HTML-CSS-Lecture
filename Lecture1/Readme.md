@@ -145,7 +145,7 @@ Lorem Ipsum has been the
 ```
 
 ## 表格
-3*3表格
+最簡單3*3表格
 ```html
 <table>
   <caption>我是表格標題</caption>
@@ -167,6 +167,129 @@ Lorem Ipsum has been the
 </table>
 ```
 
+簡單地把加上每欄每列的標題
+```html
+<table>
+  <caption>我是表格標題</caption>
+  <tr>
+    <td>我是資料</td>
+    <td>我是資料</td>
+    <td>我是資料</td>
+  </tr>
+  <tr>
+    <td>我是資料</td>
+    <td>我是資料</td>
+    <td>我是資料</td>
+  </tr>
+  <tr>
+    <td>我是資料</td>
+    <td>我是資料</td>
+    <td>我是資料</td>
+  </tr>
+</table>
+```
+
+現在有比較仔細劃分表頭跟表內容的方式
+```html
+<table>
+  <caption>我是表格標題</caption>
+  <thead>        
+    <tr>
+      <th>我是標題</th>
+      <th>我是標題</th>
+      <th>我是標題</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>我是資料</td>
+      <td>我是資料</td>
+      <td>我是資料</td>
+    </tr>
+    <tr>
+      <td>我是資料</td>
+      <td>我是資料</td>
+      <td>我是資料</td>
+    </tr>
+    <tr>
+      <td>我是資料</td>
+      <td>我是資料</td>
+      <td>我是資料</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+## 表單
+### Label and Input
+Label 和 Input 有兩種寫法
+
+第一種，把input包在label裡，通常用在radio 和 checkbox
+```html
+<div>
+  <label>
+      女
+      <input type="radio" id="female">
+  </label>
+</div>
+```
+
+第二種，input跟label拆開，通常文字欄位會是這個寫法
+```html
+<div>
+  <input type="radio" id="male">
+  <label for="male">
+      男
+  </label>
+</div>
+```
+
+然後你會發現，明明我們通常是男跟女會擇一，可是若合併上面兩塊（如下），兩個選項卻可以都同時選
+```html
+<div>
+  <label>
+    <input type="radio" id="female">
+    女
+  </label>
+</div>
+<div>
+  <input type="radio" id="male">
+  <label for="male">
+    男
+  </label>
+</div>
+```
+
+此時為兩者都加上同一個name，就會變成只能選其中一個了
+```html
+<div>
+  <label>
+    <input type="radio" name="gender" id="female">
+    女
+  </label>
+</div>
+<div>
+  <input type="radio" name="gender" id="male">
+  <label for="male">
+    男
+  </label>
+</div>
+```
+
+### button
+button 有兩種寫法，要選擇哪一種，可能就看你後端那邊喜歡怎麼接，或者是在做DOM操作或寫CSS哪個比較方便再挑。(這裡是我暫時查到的說明兩者不同的[文章](http://web.archive.org/web/20110721191046/http://particletree.com/features/rediscovering-the-button-element/
+)
+
+```html
+<div>
+  <input type="button" value="我是按鈕">
+</div>
+```
+```html
+<button></button>
+```
+
+
 ## TAG 整理
 ```
 標題 h1~h6
@@ -184,13 +307,41 @@ dd 內容，描述 dt 這個標題
 
 表格
 table 表格
-thead
-tbody
-tfoot
+thead 表頭
+tbody 表內容
+tfoot 表尾
 tr
-th
+th 每一欄或每一列的標題
 td
-caption 表格標題
+caption 大表格標題
+
+表單（傳統）
+form                  表單
+lable                 標籤
+input type="checkbox" 方塊打勾/複選
+input type="radio"    圓圈/單選
+input type="text"     單行文字
+input type="password" 密碼
+input type="button"   按鈕
+input type="file"     上傳檔案
+textarea              多行文字/留言
+select                下拉式選單
+  option              選單的選項
+
+擴充HTML5
+表單
+input type="mail"     郵件(手機上使用時，鍵盤會預設是有@)
+input type="tel"      電話(會切換成數字鍵盤)
+文章
+article               最主要的內容
+section               章節
+                      上面兩個可以互包，譬如說首頁裡面可以有很
+                      多個section放不同的 article，一個長的
+                      article也可以裡面放很多section
+aside
+header                文章前言
+footer                
+nav                   導覽(整個網站應該只會有一個)
 ```
 
-emmet快速外掛(3*3表格): `table>tr*3>td*3`
+emmet快速外掛(3乘3表格):  `table>tr*3>td*3`

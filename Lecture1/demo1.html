@@ -48,22 +48,90 @@
     <!--  Table-->
     <table>
       <caption>我是表格標題</caption>
-      <tr>
-        <td>我是資料</td>
-        <td>我是資料</td>
-        <td>我是資料</td>
-      </tr>
-      <tr>
-        <td>我是資料</td>
-        <td>我是資料</td>
-        <td>我是資料</td>
-      </tr>
-      <tr>
-        <td>我是資料</td>
-        <td>我是資料</td>
-        <td>我是資料</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>我是標題</th>
+          <th>我是標題</th>
+          <th>我是標題</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>我是資料</td>
+          <td>我是資料</td>
+          <td>我是資料</td>
+        </tr>
+        <tr>
+          <td>我是資料</td>
+          <td>我是資料</td>
+          <td>我是資料</td>
+        </tr>
+        <tr>
+          <td>我是資料</td>
+          <td>我是資料</td>
+          <td>我是資料</td>
+        </tr>
+      </tbody>
     </table>
 
+    <!-- Form  -->
+    <form>
+      <!--  text -->
+      <div>
+        <label>
+            姓名：
+            <input type="text">
+        </label>
+      </div>
+      <div>
+        <label for="phone">
+            電話：
+            <input type="text" name="phone" id="phone">
+        </label>
+      </div>
+      <!--  radio -->
+      <div>
+        <label>
+          <input type="radio" name="gender" id="female">
+          女
+        </label>
+      </div>
+      <div>
+        <input type="radio" name="gender" id="male">
+        <label for="male">
+          男
+        </label>
+      </div>
+      <!-- text area -->
+      <div>
+        <textarea name="name" rows="8" style="resize: none;"></textarea>
+      </div>
+      <!-- button-->
+      <div>
+        <input type="button" value="我是按鈕">
+      </div>
+      <div>
+        <button>按鈕2</button>
+      </div>
+      <div>
+        <input type="checkbox" id="food">
+        <label for="food">蛋糕</label>
+      </div>
+      <!--  select -->
+      <div>
+        <select>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          <option value="">6</option>
+          <option value="">7</option>
+          <option value="">8</option>
+          <option value="">9</option>
+          <option value="">10</option>
+        </select>
+      </div>
+    </form>
   </body>
 </html>
