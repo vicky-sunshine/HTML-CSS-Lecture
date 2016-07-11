@@ -289,6 +289,12 @@ button 有兩種寫法，要選擇哪一種，可能就看你後端那邊喜歡�
 <button></button>
 ```
 
+## Image
+```html
+<img src="" alt="">
+```
+`src`是圖片來源，`alt`是圖片掛的時候的替代文字
+
 
 ## TAG 整理
 ```
