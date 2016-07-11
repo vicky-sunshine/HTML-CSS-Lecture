@@ -6,7 +6,7 @@
 ```html
 <html>
   <head>
-    <!--  這邊是給瀏覽器看的一些設定 -->
+    <!--  這邊主要是瀏覽器看的一些設定 -->
   </head>
   <body>
     <!--  這邊主要是給使用者看的內容-->
@@ -15,8 +15,15 @@
 </html>
 ```
 
-## Title
-```
+## Title 標題
+```html
+<html>
+  <head>
+    <title>First Step to HTML</title>
+  </head>
+  <body>
+  </body>
+</html>
 
 ```
 除了網頁標題
@@ -25,7 +32,7 @@
 ex: 某某產品 - 某某購物網站
 來增加 SEO 的 RANK
 
-## 標題和段落
+## Header and Paragraph 標題和段落
 ```html
 <html>
   <head>
@@ -44,4 +51,26 @@ ex: 某某產品 - 某某購物網站
 ```
 有七種大小的標題
 
-## 
+## List 清單
+### unorder list
+```html
+<ul>
+  <!-- unorder list -->
+  <li>我是一筆清單</li>
+  <li>我是一筆清單</li>
+  <li>我是一筆清單</li>
+  <li>我是一筆清單</li>
+  <li>我是一筆清單</li>
+</ul>
+```
+### order list
+```html
+<ol>
+  <!-- order list -->
+  <li>有順序的清單</li>
+  <li>有順序的清單</li>
+  <li>有順序的清單</li>
+  <li>有順序的清單</li>
+  <li>有順序的清單</li>
+</ol>
+```
