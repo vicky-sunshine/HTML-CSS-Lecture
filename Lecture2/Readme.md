@@ -63,3 +63,16 @@ selector {
     - word-spacing 每個單字
     - letter-spacing 每個字母
   - 強迫不換行
+- 背景
+  - 背景顏色 background-color
+  - 背景圖片路徑 background-image
+  - 背景圖片重複 background-repeat
+    - no-repeat
+    - repeat-x
+    - repeat-y
+  - 背景圖片位置 background-position
+    - 有九個點可以使用
+  - 背景圖片尺寸 background-size
+    - cover 可以使圖片滿版，但是視窗大小移動時，圖片比例不變
+    - contain 圖片一定要完完整整的照圖片比例，多出來的部分會就空白
+  - 背景圖片固定 background-attachment
