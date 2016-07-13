@@ -76,3 +76,8 @@ selector {
     - cover 可以使圖片滿版，但是視窗大小移動時，圖片比例不變
     - contain 圖片一定要完完整整的照圖片比例，多出來的部分會就空白
   - 背景圖片固定 background-attachment
+    - 背景要不要隨著畫面捲動
+    - fix: 固定在背後
+
+## Layout
+### Box Model
