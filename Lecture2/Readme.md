@@ -89,5 +89,6 @@ selector {
   - Border 物件邊緣
 - 佔據空間: W+P+B+M
 - 可見尺寸: W+P+M
+
 ### clear
 可以用 `clear: both;`來隔開float效果(看layout-exercise2.html)
