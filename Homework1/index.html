@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <!--  show effect for clear  -->
+    <meta charset="UTF-8">
+    <title>Box Model Practice</title>
+    <style type="text/css">
+      .container {
+        width: 960px;
+        height: 1180px;
+        background-color: #ccc;
+        margin: auto;
+      }
+      .element1 {
+        /* 1 element in row*/
+        height: 200px;
+        width: 920px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #dd2;
+      }
+      .element2 {
+        /* 2 elements in row*/
+        width: 440;
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #a30;
+        float: left;
+      }
+      .element3 {
+        /* 3 elements in row*/
+        width: 280;
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #099;
+        float: left;
+      }
+      .clear{
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="element1"></div>
+      <div class="element3"></div>
+      <div class="element3"></div>
+      <div class="element3"></div>
+      <div class="clear"></div>
+      <div class="element2"></div>
+      <div class="element2"></div>
+      <div class="clear"></div>
+      <div class="element1"></div>
+      <div class="element2"></div>
+      <div class="element2"></div>
+    </div>
+  </body>
+</html>
