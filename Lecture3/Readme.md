@@ -20,6 +20,9 @@ ex: `<strong>`, `<img>`, `<a>`
 下圖藍色為block，紅色為inline
 ![](block_inline.png)
 
+#### block_inline
+每個物件都可以設定面積，會佔空間，但是不會佔掉一整列，所以一個個的區塊可以排成列，排列上預設不同大小的物件會靠底部
+
 ## Position
 - static 靜態：很少用到
 - relative 相對：自身偏移
@@ -36,3 +39,17 @@ ex: `<strong>`, `<img>`, `<a>`
 - A `>` B: A下一層的 B 物件
 - A `+` B: 緊跟在 A 後面的 B
 - A `~` B: A 之後的所有物件 B
+
+## CSS color
+- hsla
+- rgba
+
+## CSS layer
+在沒有調整`z-index`的情況下
+```html
+<div class="container">
+  <div class="aa"><div>
+  <div class="bb"><div>
+</div>
+```
+bb 會蓋住 aa
