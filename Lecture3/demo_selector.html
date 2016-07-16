@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Layout Example</title>
+    <style type="text/css">
+      div {
+        border: 2px solid #000;
+        padding: 50px;
+        background-color: #fff;
+      }
+      /* 選取 container 下一層的 div */
+      .container > div {
+        background-color: #ff0;
+      }
+
+      /* select 所有 container 底下的 div*/
+      .container div {
+        border: 2px solid #f00;
+      }
+      /* 選取緊跟在 h1 後面的 p */
+      h1 + p {
+        color: #f00;
+      }
+      /* 選取 h2 後面的所有的 p */
+      h2 ~ p {
+        color: #cd0
+      }
+
+    </style>
+  <head>
+  <body>
+    <!--  showing `>` selector-->
+    <div class="container">
+      <div>
+        <div></div>
+      </div>
+    </div>
+    <!--  -->
+    <h1>h1</h1>
+    <h1>h1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui expedita illum dicta, ex libero beatae reprehenderit vitae facilis deleniti, quis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui expedita illum dicta, ex libero beatae reprehenderit vitae facilis deleniti, quis!</p>
+    <h2>h2</h2>
+    <h2>h2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui expedita illum dicta, ex libero beatae reprehenderit vitae facilis deleniti, quis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui expedita illum dicta, ex libero beatae reprehenderit vitae facilis deleniti, quis!</p>
+    <h3>h3</h3>
+    <h3>h3</h3>
+    <h3>h3</h3>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui expedita illum dicta, ex libero beatae reprehenderit vitae facilis deleniti, quis!</p>
+
+  </body>
+</html>

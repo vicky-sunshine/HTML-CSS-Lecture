@@ -29,3 +29,10 @@ ex: `<strong>`, `<img>`, `<a>`
   - 找到的話，就會靠著那一層做絕對定位
   - 使用這個的話，會讓物件抽離資料流
 - fixed 固定：固定於視窗
+
+請看 `demo_position_xxx`系列
+## CSS selector
+- S `space` B: A 底下所有的 B 物件
+- A `>` B: A下一層的 B 物件
+- A `+` B: 緊跟在 A 後面的 B
+- A `~` B: A 之後的所有物件 B
