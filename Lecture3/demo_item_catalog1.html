@@ -3,6 +3,10 @@
     <meta charset="UTF-8">
     <title>Layout Example</title>
     <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
     .wrapper {
       width: 1000px;
       margin: auto;
@@ -17,7 +21,40 @@
     }
     .rate {
       color: #ccc;
+      margin-bottom: 10px;
     }
+    .rate ul {
+      direction: rtl;
+    }
+    .rate li {
+      display: inline;
+      font-size: 20px;
+    }
+
+
+    /*
+    滑鼠指上去星星會變色
+    .rate li:hover,
+    .rate li:hover ~ li{
+      cursor: pointer;
+      color: #fe0;
+    }*/
+
+    /*
+    IE8 不支援 `~` 的寫法
+    所以要用以下寫法
+    */
+    .rate li:hover,
+    .rate li:hover + li,
+    .rate li:hover + li + li,
+    .rate li:hover + li + li,
+    .rate li:hover + li + li + li,
+    .rate li:hover + li + li + li + li {
+      cursor: pointer;
+      color: #fe0;
+    }
+
+
     .item img {
       width: 100%;
       margin-bottom: 20px;
@@ -53,32 +90,64 @@
     <div class="wrapper">
       <div class="item">
         <div class="tag">SALE</div>
-        <img src="http://fakeimg.pl/350x200/cccccc/fff">
-        <div class="rate">★★★★★</div>
+        <img src="http://fakeimg.pl/350x400/cccccc/fff">
+        <div class="rate">
+          <ul>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+          </ul>
+        </div>
         <div class="title">Paint Brush</div>
         <div class="price">$124.00 <del>$219.00</del></div>
         <a href="#" class="btn">ADD TO CART</a>
       </div>
       <div class="item NEW">
         <div class="tag">NEW</div>
-        <img src="http://fakeimg.pl/350x200/cccccc/fff">
-        <div class="rate">★★★★★</div>
+        <img src="http://fakeimg.pl/350x400/cccccc/fff">
+        <div class="rate">
+          <ul>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+          </ul>
+        </div>
         <div class="title">Paint Brush</div>
         <div class="price">$124.00 <del>$219.00</del></div>
         <a href="#" class="btn">ADD TO CART</a>
       </div>
       <div class="item">
         <div class="tag">SALE</div>
-        <img src="http://fakeimg.pl/350x200/cccccc/fff">
-        <div class="rate">★★★★★</div>
+        <img src="http://fakeimg.pl/350x400/cccccc/fff">
+        <div class="rate">
+          <ul>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+          </ul>
+        </div>
         <div class="title">Paint Brush</div>
         <div class="price">$124.00 <del>$219.00</del></div>
         <a href="#" class="btn">ADD TO CART</a>
       </div>
       <div class="item NEW">
         <div class="tag">NEW</div>
-        <img src="http://fakeimg.pl/350x200/cccccc/fff">
-        <div class="rate">★★★★★</div>
+        <img src="http://fakeimg.pl/350x400/cccccc/fff">
+        <div class="rate">
+          <ul>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+            <li>★</li>
+          </ul>
+        </div>
         <div class="title">Paint Brush</div>
         <div class="price">$124.00 <del>$219.00</del></div>
         <a href="#" class="btn">ADD TO CART</a>
