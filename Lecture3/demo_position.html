@@ -1,12 +1,16 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Position Relative</title>
+    <title>Box Queue</title>
     <style type="text/css">
     .box {
       width: 960px;
       margin: auto;
     }
+    ul {
+      background-color: #aaa;
+    }
+
     /* 大家排隊 */
     li {
       float: left;
@@ -31,6 +35,11 @@
       position: relative;
       top: 30px;
       left: 240px;
+    }
+    /*b16 不想排隊，固定在畫面左上*/
+    .b16 {
+      background-color: rgba(0,0,255,0.5);
+      position: absolute;
     }
     </style>
   </head>

@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Position Absolute</title>
+    <style type="text/css">
+      .clearfix {
+        clear: both;
+      }
+      /*以下是 RWB 的基本用法*/
+      /*假設最小寬度，for電腦*/
+      @media (min-width: 768px) {
+        .txt {
+          width: 50%;
+          float: left;
+        }
+        .pic {
+          width: 50%;
+          float: left;
+        }
+        /*讓第二排圖片跟文字位置互換*/
+        .box2 .pic {
+          position: relative;
+          left: 50%;
+        }
+        .box2 .txt {
+          position: relative;
+          left: -50%;
+        }
+      }
+      /*假設最大寬度，for手機*/
+      @media (max-width: 767px) {
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="pic">
+          <img src="http://fakeimg.pl/350x200/00cccc/fff">
+      </div>
+      <div class="txt">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Eaque minima quaerat mollitia obcaecati harum quos dolor
+        dolores ratione esse explicabo sunt quisquam nobis reprehenderit
+        delectus saepe voluptatibus vel cum debitis ea rem fugit dolorem
+        repellendus magnam, velit! Consequuntur quia earum possimus soluta
+        quis aperiam vitae dolores tempore reiciendis. Necessitatibus iste
+        incidunt iusto, sed recusandae voluptatum neque ullam magni non?
+        Accusamus veritatis aperiam, qui ea ab, enim eveniet, sint perspiciatis
+        facilis sunt voluptates eius velit. Qui necessitatibus natus dolor
+        quidem dolorem distinctio neque voluptatem, hic totam facere illo
+        odio dignissimos blanditiis aliquam eos ducimus sequi, saepe itaque
+        placeat nobis consequuntur. Assumenda eos quae, soluta adipisci et,
+        dolorum amet voluptates veritatis nesciunt obcaecati quisquam,
+        excepturi alias. Minus ipsum nulla omnis reprehenderit, magni nisi
+        neque maiores nam molestiae repellendus sed voluptates sit perferendis,
+        eaque ea ut eveniet molestias veniam distinctio itaque, nobis.
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="box2">
+      <div class="pic">
+          <img src="http://fakeimg.pl/350x200/00cccc/fff">
+      </div>
+      <div class="txt">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Eaque minima quaerat mollitia obcaecati harum quos dolor
+        dolores ratione esse explicabo sunt quisquam nobis reprehenderit
+        delectus saepe voluptatibus vel cum debitis ea rem fugit dolorem
+        repellendus magnam, velit! Consequuntur quia earum possimus soluta
+        quis aperiam vitae dolores tempore reiciendis. Necessitatibus iste
+        incidunt iusto, sed recusandae voluptatum neque ullam magni non?
+        Accusamus veritatis aperiam, qui ea ab, enim eveniet, sint perspiciatis
+        facilis sunt voluptates eius velit. Qui necessitatibus natus dolor
+        quidem dolorem distinctio neque voluptatem, hic totam facere illo
+        odio dignissimos blanditiis aliquam eos ducimus sequi, saepe itaque
+        placeat nobis consequuntur. Assumenda eos quae, soluta adipisci et,
+        dolorum amet voluptates veritatis nesciunt obcaecati quisquam,
+        excepturi alias. Minus ipsum nulla omnis reprehenderit, magni nisi
+        neque maiores nam molestiae repellendus sed voluptates sit perferendis,
+        eaque ea ut eveniet molestias veniam distinctio itaque, nobis.
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="box3">
+      <div class="pic">
+          <img src="http://fakeimg.pl/350x200/00cccc/fff">
+      </div>
+      <div class="txt">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Eaque minima quaerat mollitia obcaecati harum quos dolor
+        dolores ratione esse explicabo sunt quisquam nobis reprehenderit
+        delectus saepe voluptatibus vel cum debitis ea rem fugit dolorem
+        repellendus magnam, velit! Consequuntur quia earum possimus soluta
+        quis aperiam vitae dolores tempore reiciendis. Necessitatibus iste
+        incidunt iusto, sed recusandae voluptatum neque ullam magni non?
+        Accusamus veritatis aperiam, qui ea ab, enim eveniet, sint perspiciatis
+        facilis sunt voluptates eius velit. Qui necessitatibus natus dolor
+        quidem dolorem distinctio neque voluptatem, hic totam facere illo
+        odio dignissimos blanditiis aliquam eos ducimus sequi, saepe itaque
+        placeat nobis consequuntur. Assumenda eos quae, soluta adipisci et,
+        dolorum amet voluptates veritatis nesciunt obcaecati quisquam,
+        excepturi alias. Minus ipsum nulla omnis reprehenderit, magni nisi
+        neque maiores nam molestiae repellendus sed voluptates sit perferendis,
+        eaque ea ut eveniet molestias veniam distinctio itaque, nobis.
+      </div>
+    </div>
+  </body>
+</html>
