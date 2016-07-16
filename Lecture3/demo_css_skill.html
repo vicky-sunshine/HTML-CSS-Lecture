@@ -10,7 +10,7 @@
     .SALE, .NEW {
       width:210px;
       padding:20px;
-      background-color: : #fff;
+      background-color: #fff;
       float: left;
       text-align: center;
       position: relative
@@ -22,11 +22,7 @@
       width: 100%;
       margin-bottom: 20px;
     }
-    .NEW .title {
-      font-size: 18px;
-      color: #f00;
-    }
-    .SALE .title {
+    .NEW .title, .SALE .title {
       font-size: 18px;
       color: #f00;
     }
@@ -37,7 +33,7 @@
       color: #ccc;
       font-size: 14px;
     }
-    .NEW .tag {
+    .NEW .tag, .SALE .tag {
       position: absolute;
       top: 10px;
       left: 8px;
@@ -45,18 +41,9 @@
       font-size: 12px;
       border-radius: 5px;
       color:#fff;
-      background-color: #DD3D48;
     }
-    .SALE .tag {
-      position: absolute;
-      top: 10px;
-      left: 8px;
-      padding: 8px;
-      font-size: 12px;
-      border-radius: 5px;
-      color: #fff;
-      background-color: #79CCFF;
-    }
+    .NEW .tag { background-color: #DD3D48; }
+    .SALE .tag { background-color: #79CCFF; }
     </style>
   </head>
     <div class="wrapper">
