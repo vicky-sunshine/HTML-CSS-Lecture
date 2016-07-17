@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Shape</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      .toolTips {
+        width: 200px;
+        height: 50px;
+        background-color: #00c;
+        color: #fff;
+        margin:100px;
+        position: relative;
+        border-radius: 10px;
+      }
+      .toolTips:after {
+        content: '';
+        display: block;
+        height: 0px;
+        width: 0px;
+        border-top: 20px solid #00c;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+
+        /*記得*/
+        position: absolute;
+        bottom: -20px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+      }
+      .triangle-method1 {
+        width: 0%;
+        border-top: 100px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 100px solid #fe0;
+        border-bottom: 100px solid #fe0;
+        margin: 100px;
+      }
+      .triangle-method2 {
+        width: 0%;
+        border-right: 200px solid #fe0;
+        border-top: 200px solid transparent;
+        margin: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="toolTips">Lorem ipsum dolor.</div>
+    <div class="triangle-method1"></div>
+    <div class="triangle-method2"></div>
+  </body>
+
+</html>

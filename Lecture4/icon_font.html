@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Icon Font</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      .info {
+        position: absolute;
+        top: 120px;
+        color: #000;
+        font-size: 64px;
+      }
+      .toolTips {
+        width: 200px;
+        height:100px;
+        background-color: #000;
+        color: #fff;
+        margin:100px;
+        position: relative;
+        border-radius: 10px;
+        position: relative;
+        line-height: 40px;
+      }
+      .toolTips:after {
+        content: '';
+        display: block;
+        height: 0px;
+        width: 0px;
+        border-top: 20px solid #000;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+
+        /*記得*/
+        position: absolute;
+        bottom: -20px;
+        left: 0px;
+        right: 50px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolTips">
+      <div class="info">
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+      </div>
+      <p>
+        Lorem ipsum dolor.
+      </p>
+
+    </div>
+  </body>
+
+</html>

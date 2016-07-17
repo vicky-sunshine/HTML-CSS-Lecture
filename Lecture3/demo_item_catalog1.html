@@ -75,7 +75,7 @@
       font-size: 14px;
     }
 
-    .SALE:before, .NEW:before {
+    .item:before {
       position: absolute;
       left: 10px;
       top: 30px;
@@ -84,6 +84,7 @@
       border-radius: 5px;
       color:#fff;
       background-color: #79CCFF;
+      transition: .5s
     }
 
     .NEW:before {
@@ -92,6 +93,15 @@
     .SALE:before {
       content: 'SALE';
       background-color: #79CCFF;}
+    .NEW:hover:before {
+      background-color: #FF4E48;
+      top: 25px;
+    }
+    .SALE:hover:before {
+      background-color: #8ADDFF;
+      top: 25px;
+    }
+
     /* select emtpy tag*/
     .item .tag:empty {
       display:none;

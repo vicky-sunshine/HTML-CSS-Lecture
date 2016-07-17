@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>POP UP</title>
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        text-decoration: none;
+      }
+      .menu {
+        width: 600px;
+        margin: 40px;
+        font-size: 0px;
+
+      }
+      .menu .sub1_li {
+        /* 選項 */
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        position: relative;
+        background-color: #1ABC9C;
+
+        transition: .3s;
+      }
+      .menu .sub1_li:first-child {
+        border-radius: 10px 0px 0px 10px;
+      }
+      .menu .sub1_li:last-child {
+        border-radius: 0px 10px 10px 0px;
+      }
+
+      .menu a {
+        color: #FFFFFF;
+      }
+
+      .menu .sub1_li:hover {
+        background-color: #2BCDAD;
+      }
+
+      .menu .sub1_li:hover .sub1_ul {
+        display: block;
+        position: absolute;
+
+        z-index: 2;
+        top: 40px; /* fontsize + padding*2(上下) */
+        left: 0px;
+        padding: 5px 0px;
+      }
+
+
+      .menu .sub1_ul {
+        /* 子選項 */
+        display: none;
+      }
+
+      .menu .sub1_ul li {
+        /*為了讓子選單變直條*/
+        display: block;
+        color: #FFFFFF;
+
+        width: 150px;
+        padding: 10px;
+        text-align: left;
+
+        background-color: #49C3E9;
+        transition: .3s;
+      }
+
+      .menu .sub1_ul li:first-child {
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      .menu .sub1_ul li:last-child {
+        border-radius: 0px 0px 10px 10px;
+      }
+
+      .menu .sub1_ul li:hover{
+        background-color: #5AD4FA;
+      }
+
+    </style>
+    <!--  firstchild  -->
+    <!--  lastchild  -->
+
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="sub1_li">
+        <a href="">項目</a>
+        <ul class="sub1_ul">
+          <li><a href="#">子選項</a></li>
+          <li><a href="#">子選項</a></li>
+          <li><a href="#">子選項</a></li>
+          <li><a href="#">子選項</a></li>
+          <li><a href="#">子選項</a></li>
+          <li><a href="#">子選項</a></li>
+        </ul>
+      </li>
+      <li class="sub1_li">
+        <a href="">項目</a>
+        <ul class="sub1_ul">
+          <li><a href="#">子選項</a></li>
+          <li><a href="#">子選項</a></li>
+          <li><a href="#">子選項</a></li>
+          <li><a href="#">子選項</a></li>
+        </ul>
+      </li>
+      <li class="sub1_li">
+        <a href="">項目</a>
+      </li>
+      <li class="sub1_li">
+        <a href="">項目</a>
+        <ul class="sub1_ul">
+          <li><a href="#">子選項</a></li>
+          <li><a href="#">子選項</a></li>
+        </ul>
+      </li>
+      <li class="sub1_li">
+        <a href="">項目</a>
+      </li>
+    </ul>
+  </body>
+</html>
