@@ -79,9 +79,10 @@ selector {
     - 背景要不要隨著畫面捲動
     - fix: 固定在背後
 
+一些範例在 `basic-style.html`
+
 ## Layout
 ### Box Model
-(看layout-exercise.html)
 - 參數
   - Width 物件寬度
   - Padding 物件框和內容物的寬度
@@ -90,5 +91,10 @@ selector {
 - 佔據空間: W+P+B+M
 - 可見尺寸: W+P+M
 
+(看`box-model1.html`和`box-model3.html`)
+
+
+![](padding_vs_margin.png)
 ### clear
-可以用 `clear: both;`來隔開float效果(看layout-exercise2.html)
+可以用 `clear: both;`來隔開float效果
+(看`box-model2.html`)
