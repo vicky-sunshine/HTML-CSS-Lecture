@@ -38,17 +38,17 @@ ex: `<strong>`, `<img>`, `<a>`
 - fixed 固定：固定於視窗
 
 請看 `demo_position` folder 裡的範例:
-- `demo_position`:
+- `demo_position.html`
   - 基本的 `relative`, `absolute` 效果
-- `demo_inlineblock`, `demo_inlineblock2`
+- `demo_inlineblock.html`, `demo_inlineblock2.html`
   - 展示 `inline-block`的排列效果
-- `demo_position_fixed`
+- `demo_position_fixed.html`
   - 利用`position: fixed;` 做側邊廣告
-- `demo_position_lightbox`:
+- `demo_position_lightbox`.html:
   - 利用 `position: absolute;` 做佔全頁的廣告
-- `demo_position_navbar`,`demo_position_navbar2`
+- `demo_position_navbar.html`,`demo_position_navbar2.html`
   - 分別用 `float`和 `position` 做出 navbar 效果
-- `demo_position_rwb`
+- `demo_position_rwb.html`
   - rwb範例
 
 ## CSS selector

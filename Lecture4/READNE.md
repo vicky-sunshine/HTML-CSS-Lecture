@@ -21,7 +21,7 @@
 - `border-radius`:radius應用
 
 ## 綜合
-- Align Vertical
+- `align_vertical.html`
   - 概念: `:before`, `inline-block`
-- Popup dropdown
+- `popup.html`: popup dropdown
   - 概念：`inline-block`, `position`, `border-radius`, `:hover`, `:transition`
