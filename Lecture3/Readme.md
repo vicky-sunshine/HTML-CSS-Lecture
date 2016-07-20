@@ -4,9 +4,13 @@
 讓網頁排版在各個瀏覽器的排版一致，徹底清掉 CSS
 http://meyerweb.com/eric/tools/css/reset/
 
+`demo_reset_css1.html`
+
 #### Normalize css
 把必要的譬如粗體，斜體留著
 https://necolas.github.io/normalize.css/
+
+`demo_reset_css2.html`
 
 ## Block and inline
 #### Block 區段
@@ -33,12 +37,27 @@ ex: `<strong>`, `<img>`, `<a>`
   - 使用這個的話，會讓物件抽離資料流
 - fixed 固定：固定於視窗
 
-請看 `demo_position_xxx`系列
+請看 `demo_position` folder 裡的範例:
+- `demo_position`:
+  - 基本的 `relative`, `absolute` 效果
+- `demo_inlineblock`, `demo_inlineblock2`
+  - 展示 `inline-block`的排列效果
+- `demo_position_fixed`
+  - 利用`position: fixed;` 做側邊廣告
+- `demo_position_lightbox`:
+  - 利用 `position: absolute;` 做佔全頁的廣告
+- `demo_position_navbar`,`demo_position_navbar2`
+  - 分別用 `float`和 `position` 做出 navbar 效果
+- `demo_position_rwb`
+  - rwb範例
+
 ## CSS selector
 - S `space` B: A 底下所有的 B 物件
 - A `>` B: A下一層的 B 物件
 - A `+` B: 緊跟在 A 後面的 B
-- A `~` B: A 之後的所有物件 B
+- A `~` B: A 之後的所有物件 b
+
+看`demo_selector.html`
 
 ## CSS color
 - hsla
@@ -53,3 +72,8 @@ ex: `<strong>`, `<img>`, `<a>`
 </div>
 ```
 bb 會蓋住 aa
+
+## 綜合應用
+使用 `:hover` selector 搭配 `position`
+
+`demo_item_catalog1.html` 和 `demo_item_catalog2.html`

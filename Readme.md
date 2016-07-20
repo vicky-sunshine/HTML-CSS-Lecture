@@ -19,6 +19,7 @@ Speacker: Amos Lee
   - CSS colors
 - [Lecture 4](https://github.com/vicky-sunshine/HTML-CSS-Lecture/tree/master/Lecture4)
   - Border & Shape
+    - 利用 Border 做出圖形
   - CSS Pseudo Element
     - `:before`, `:after`
   - Animation
