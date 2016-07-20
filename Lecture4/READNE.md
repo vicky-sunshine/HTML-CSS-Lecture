@@ -17,8 +17,8 @@
     - 色彩 border-color
 
 範例：
-- `border_and_shape`：三角形和toolTips
-- `border-radius`:radius應用
+- `border_and_shape.html`: 三角形和toolTips
+- `border_radius.html`: radius應用
 
 ## 綜合
 - `align_vertical.html`
